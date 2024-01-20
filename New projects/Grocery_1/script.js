@@ -9,9 +9,27 @@ const table = document.getElementById("table");
 
 const data = [
     {
-        'cat': 'abc',
-        'name': "satvik", 'id': 1, 'quantiy': 10
+        'cat': 'Rice & Grains','name': "Basmati Rice,Wheat Flour,Besan,Moong Dal", 'id': 100520123, 'quantity': 10
+    },
+    { 
+        'cat': 'Spices','name': 'Tumeric,Cumin,Garam Masala,Guntur Karam,Cardamom,Cloves,cinammon', 'id':100520124,"quantity": 20
+    },
+    {
+        'cat': 'Vegetables','name':'Onion,Tomatoes,Potatoes,Garlic,Ginger', 'id':100520125,"quantity":25
+    },
+    {
+        'cat': 'Pulses','name':'Chana Dal,Urad Dal,Masoor Dal','id':100520126,"quantity":13
+    },
+    {
+        'cat':'Cooking Oils','name':'Mustard Oil,Ghee,Sunflower Oil','id':100520127,"quantity":46
+    },
+    {
+        'cat':'Dairy & Alternatives','name':'Paneer,Curd,Milk,Butter','id':100520128,"quantity":12
+    },
+    {
+        'cat':'Breads','name':'Roti,Naan,Paratha','id':100520129,'quantity':45
     }
+
 ];
 
 async function onload (e){
