@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onload()">
+    <center>
+    <table id ="table">
+        <tr>
+            <th>Category</th>
+            <th>Item Name</th>
+            <th>Item Id</th>
+            <th>Quantity</th>
+        </tr>
+    </table>
+    <!-- <form  id="input_form" onsubmit="addData(e)" > -->
+        <!-- <input id="category_input"/>
+        <input id="Item_name_input"/>
+        <input id="Item_id_input"/>
+        <input id="Quantity_input"/>
+        <button type="submit" onclick="addData( )">Submit</button> 
+    
+    -->
+    <div id="input_form"">
+        <label for="category_input">Category:</label>
+        <input id="category_input" placeholder="Enter category" />
+
+        <label for="Item_name_input">Item Name:</label>
+        <input id="Item_name_input" placeholder="items with ',' separated" />
+
+        <label for="Item_id_input">Item ID:</label>
+        <input id="Item_id_input" placeholder="Enter item ID" />
+
+        <label for="Quantity_input">Quantity:</label>
+        <input id="Quantity_input" placeholder="Enter quantity" />
+
+        <button type="submit" onclick="addData()">Submit</button>
+    </div>
+    <!-- </form> -->
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
