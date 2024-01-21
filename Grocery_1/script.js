@@ -7,7 +7,7 @@
 
 const table = document.getElementById("table");
 
-const data = [
+var data = [
     {
         'cat': 'Rice & Grains','name': "Basmati Rice,Wheat Flour,Besan,Moong Dal", 'id': 100520123, 'quantity': 10
     },
@@ -36,7 +36,7 @@ async function onload (e){
 // const res =
 //       fetch("ht")
 // const data =await JSON.parse(res.body)
-
+    table.innerHTML=''
         
     data.map((data,i)=>{
         const tr = document.createElement('tr')
@@ -60,6 +60,7 @@ async function onload (e){
     
         tr.append(td1, td2, td3, td4);
         table.appendChild(tr);
+
         
     })
 
@@ -105,4 +106,12 @@ function addData() {
 
 
 }
+function search(){
+    const input = document.getElementById('search_bar');
+    data= data.filter((el)=>el.cat.toLowerCase().includes(input.value.toLowerCase()))
+     onload();
+    
 
+
+
+}
